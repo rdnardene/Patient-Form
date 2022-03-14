@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Patient Form</title>
+</head>
+
+
+
+<body>
+  <div class="container">
+    <div class="title">Patient Form</div>
+    <div class="content">
+      <form action="" id="forminfo">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" id="fname" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Middle Name</span>
+            <input type="text" id="mname">
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" id="lname" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" id="address" class="input" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Birthdate</span>
+            <input type="date" id="Bdate"required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contact Number</span>
+            <input type="text" id="contact" placeholder="(e.g.0912-3093-345)" required>
+          </div>
+ 
+            <div class="input-box1">
+              <span class="gender-title">Medical History</span>
+            
+              <ul>
+                <li> <input type="checkbox" name="check" id="check"> <span class="check"> Asthma</span></li>
+                <li> <input type="checkbox" name="check" id="check"><span class="check"> Cancer</span></li>
+                <li> <input type="checkbox" name="check" id="check"><span class="check"> Cardiac Desease</span></li>
+                <li> <input type="checkbox" name="check" id="check"><span class="check"> Diabetis</span></li>     
+              </ul>   
+          </div>
+          <div class="input-box1">
+            <br>
+            <ul>
+              <li>  <input type="checkbox" name="check" id="check"> <span class="check"> Hypertension</span></li>
+              <li> <input type="checkbox" name="check" id="check"><span class="check"> Psychiatric Disorder</span></li>
+              <li> <input type="checkbox" name="check" id="check"><span class="check"> Epilesy</span></li>
+              <li> <input type="checkbox" name="check" id="check"><span class="check"> Others</span></li>     
+            </ul>   
+        </div>
+          <div class="input-box1">
+          <span class="gender-title"> Gender: </span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male: </span>
+            <input type="radio" name="gender" id="dot-1">
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female: </span>
+            <input type="radio" name="gender" id="dot-2">
+          </label>
+     
+        </div>
+        </div>
+        <div class="input-box">
+        <label for="">Current Symptoms:</label>  <br><br>
+        <select name="" id="symptoms" multiple>
+        <option value="Chest Pain">Chest Pain</option>
+        <option value="Respiratory">Respiratory</option>
+        <option value="Hermatological">Hermatological</option>
+        <option value="Lymphatic">Lymphatic</option>
+        <option value="Neurological">Neurological</option>
+        <option value="Psychiatric">Psychiatric</option>
+        <option value="Gastrointestinal">Gastrointestinal</option>
+        <option value="Weight-Loss">Weight Loss</option>
+        
+         </select>
+        </div>
+        <div class="input-box1">    
+        <span class="gender-title">Are you currently taking medication?</span>
+        <div class="category">
+          <label for="dot-1">
+          <span class="dot one"></span>
+          <span class="gender">Yes </span>
+          <input type="radio" name="gender" id="dot-1">
+        </label>
+        <label for="dot-2">
+          <span class="dot two"></span>
+          <span class="gender">No </span>
+          <input type="radio" name="gender" id="dot-2">
+        </label>
+        <input style="font-size: 18px; width: 100px;" type="text" name="" id="ifyes">
+      </div>
+      </div>
+        </div>
+        <div class="button">
+          <input type="submit" id="btnsubmit" value="SUBMIT">
+          <input type="submit" id="btncancel" value="RESET">
+        </div>
+      </form>
+    </div>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>
